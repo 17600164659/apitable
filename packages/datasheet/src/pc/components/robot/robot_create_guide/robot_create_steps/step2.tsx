@@ -68,6 +68,7 @@ export const RobotCreateGuideStep2 = (props: IStepProps) => {
 
   // triggerTypes to Select options
   const options = getNodeTypeOptions(triggerTypes);
+  console.log(options, 232323)
   return (
     <Box
       width='336px'
@@ -89,13 +90,13 @@ export const RobotCreateGuideStep2 = (props: IStepProps) => {
           placement='right-center'
         >
           <span>
-            <Avatar
+            {false && <Avatar
               icon={<img src={integrateCdnHost(getEnvVariables().CREATE_ROBOT_AVATAR!)} width={64} height={64} alt="robot" />}
               size='l'
               style={{
                 background: 'none'
               }}
-            />
+            />}
           </span>
         </Tooltip>
       </Box>

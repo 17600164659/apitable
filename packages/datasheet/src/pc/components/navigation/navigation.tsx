@@ -339,6 +339,7 @@ export const Navigation: FC<React.PropsWithChildren<unknown>> = () => {
         </div>
         <div className={styles.navWrapper} onClick={hiddenUserMenu}>
           {navList.map((item: any) => {
+            if (item.domId === "NAV_ICON_TEMPLATE") return null;
             if (item.component) {
               return item.component();
             }
@@ -403,7 +404,7 @@ export const Navigation: FC<React.PropsWithChildren<unknown>> = () => {
             <span id={NAV_ID.ICON_NOTIFICATION} className={styles.noticeAnimate} />
           </span>
         </Tooltip>
-        {!inSocialApp?.() && !isMobileApp() && (
+        {!inSocialApp?.() && !isMobileApp() && false && (
           <div className={styles.help}>
             <Help templateActived={templateActive} />
           </div>

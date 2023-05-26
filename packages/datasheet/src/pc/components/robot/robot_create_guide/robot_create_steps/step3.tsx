@@ -110,10 +110,10 @@ export const RobotCreateGuideStep3 = (props: IStepProps) => {
           placement="right-center"
         >
           <span>
-            <Avatar
+            {false && <Avatar
               icon={<img src={integrateCdnHost(getEnvVariables().CREATE_ROBOT_AVATAR!)} width={64} height={64} alt="robot" />}
               size='l'
-            />
+            />}
           </span>
         </Tooltip>
       </Box>

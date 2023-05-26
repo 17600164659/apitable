@@ -200,7 +200,7 @@ export const SettingPanel: FC<React.PropsWithChildren<ISettingPanelProps>> = mem
       label: t(Strings.org_chart_init_fields_button),
       value: 'add',
       disabled: !permissions.manageable,
-      prefixIcon: <AddOutlined color={colors.thirdLevelText} />,
+      // prefixIcon: <AddOutlined color={colors.thirdLevelText} />,
     });
 
     options.unshift({

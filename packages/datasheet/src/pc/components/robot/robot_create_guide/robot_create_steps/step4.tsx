@@ -45,10 +45,10 @@ export const RobotCreateGuideStep4 = (props: IStepProps) => {
         justifyContent='space-between'
         margin='0px 0px 24px 0px'
       >
-        <Avatar
+        {false && <Avatar
           icon={<img src={integrateCdnHost(getEnvVariables().CREATE_ROBOT_AVATAR!)} width={64} height={64} alt="robot" />}
           size='l'
-        />
+        />}
         <Typography >
           {t(Strings.robot_create_wizard_step_4_desc)}
         </Typography>

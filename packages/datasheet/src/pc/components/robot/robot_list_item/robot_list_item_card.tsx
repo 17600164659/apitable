@@ -79,11 +79,11 @@ export const RobotListItemCard: React.FC<React.PropsWithChildren<IRobotListItemC
         <Box display='flex' alignItems='center'>
           <Box width='100%'>
             <Box display='flex' alignItems='center'>
-              <Avatar
+              {false && <Avatar
                 icon={<Image alt={''} src={integrateCdnHost(getEnvVariables().ROBOT_DEFAULT_AVATAR!)} width={24} height={24} />}
                 style={{ marginRight: 4, minWidth: '24px' }}
                 size='xs'
-              />
+              />}
               <Typography variant='h8' ellipsis>
                 {name || t(Strings.robot_unnamed)}
               </Typography>

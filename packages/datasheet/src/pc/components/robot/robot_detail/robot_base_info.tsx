@@ -74,13 +74,13 @@ export const RobotBaseInfo = () => {
           display="flex"
           alignItems="center"
         >
-          <Avatar
+          {false && <Avatar
             icon={<img src={integrateCdnHost(getEnvVariables().ROBOT_DEFAULT_AVATAR!)} width={24} height={24} alt="robot" />}
             size="xs"
             style={{
               minWidth: '24px',
             }}
-          />
+          />}
           <Box marginLeft="4px">
             {
               isEditingRobotName ? <TextInput
