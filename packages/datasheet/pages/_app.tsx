@@ -127,6 +127,7 @@ enum LoadingStatus {
 }
 
 function MyApp(props: AppProps & { envVars: string }) {
+  console.log(2, 23232323)
   const router = useRouter();
   const isWidget = router.asPath.includes('widget-stage');
   if (isWidget) {
