@@ -19,7 +19,7 @@
 // import App from 'next/app'
 import {
   Api,
-  integrateCdnHost,
+  // integrateCdnHost,
   Navigation,
   StatusCode,
   StoreActions,
