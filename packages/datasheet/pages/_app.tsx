@@ -513,8 +513,7 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
             )}>
             {
               ((loading !== LoadingStatus.Complete) || userLoading) && <div className='main-img-wrap' style={{ height: 'auto' }}>
-                <img src={integrateCdnHost(getEnvVariables().LOGO!)} className='script-loading-logo-img' alt='logo' />
-                <img src={integrateCdnHost(getEnvVariables().LOGO_TEXT_LIGHT!)} className='script-loading-logo-text-img' alt='logo_text_dark' />
+                <img src="https://assets.metaio.cc/hubs/assets/newloading-93a856a0a1204d39c7623e3ca800a806.gif" className='script-loading-logo-img' alt='logo' />
               </div>
             }
           </div>
