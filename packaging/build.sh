@@ -1,0 +1,1 @@
+docker build -t apitable/web-server ../packages -f Dockerfile.web-server
