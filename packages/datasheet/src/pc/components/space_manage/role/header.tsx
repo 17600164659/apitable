@@ -36,9 +36,9 @@ export const Header = () => {
           <QuestionCircleOutlined color={colors.textCommonTertiary} size={16} />
         </a>
       </Box>
-      <Typography variant="body3">
+      {/* <Typography variant="body3">
         <span dangerouslySetInnerHTML={{ __html: t(Strings.manage_role_header_desc, { url: getEnvVariables().SPACE_ROLE_HELP_URL }) }} />
-      </Typography>
+      </Typography> */}
     </Box>
   );
 };

@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  web-server:
+    image: ${IMAGE_REGISTRY}/${IMAGE_WEB_SERVER}
+    pull_policy: ${IMAGE_PULL_POLICY:-if_not_present}
+    restart: always
+    expose:
+      - "8080"
+    env_file:
+      - "${ENV_FILE:-.env}"
+    networks:
+      - apitable
