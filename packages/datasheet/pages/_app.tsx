@@ -136,6 +136,7 @@ function MyApp(props: AppProps & { envVars: string }) {
 }
 
 function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: string }) {
+  console.log(1, 23232323)
   const router = useRouter();
   const env = JSON.parse(envVars);
   const [loading, setLoading] = useState(() => {
