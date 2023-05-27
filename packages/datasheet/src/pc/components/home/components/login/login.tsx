@@ -42,10 +42,12 @@ interface ILoginProps {
 }
 
 export const Login: React.FC<React.PropsWithChildren<ILoginProps>> = (props) => {
+  console.log(1, 23232323)
   const { switchClick = () => {}, email = '', setEmail } = props;
   const colors = useThemeColors();
   const { loginOrRegisterReq } = useUserRequest();
   const { run: loginReq, loading } = useRequest(loginOrRegisterReq, { manual: true });
+  console.log(loading, 23232323);
   const [noTraceVerification, setNoTraceVerification] = useState<string | null>(null);
   
   const [errorMsg, setErrorMsg] = useState<ILoginErrorMsg>({});
