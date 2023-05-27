@@ -25,6 +25,7 @@ const DingTalkH5LoginWithNoSSR = dynamic(() => import('enterprise').then((compon
 }), { ssr: false });
 
 const App = () => {
+  console.log('dingtalk', 23232323)
   return DingTalkH5LoginWithNoSSR && <DingTalkH5LoginWithNoSSR />;
 };
 

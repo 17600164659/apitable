@@ -22,6 +22,7 @@ import React from 'react';
 const MailLoginWithNoSSR = dynamic(() => import('pc/components/invite/mail_invite/mail_login'), { ssr: false });
 
 const App = () => {
+  console.log('mail', 23232323)
   return <MailLoginWithNoSSR />;
 };
 
