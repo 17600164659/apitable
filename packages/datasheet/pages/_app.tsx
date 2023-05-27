@@ -127,7 +127,6 @@ enum LoadingStatus {
 }
 
 function MyApp(props: AppProps & { envVars: string }) {
-  console.log(2, 23232323)
   const router = useRouter();
   const isWidget = router.asPath.includes('widget-stage');
   if (isWidget) {
@@ -137,7 +136,6 @@ function MyApp(props: AppProps & { envVars: string }) {
 }
 
 function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: string }) {
-  console.log(1, 23232323)
   const router = useRouter();
   const env = JSON.parse(envVars);
   const [loading, setLoading] = useState(() => {
@@ -187,6 +185,7 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
     };
 
     setTimeout(() => {
+      console.log(loading, 23232323)
       if (loading !== LoadingStatus.None) {
         return;
       }
