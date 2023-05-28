@@ -117,7 +117,7 @@ export const TemplateDetailSide: React.FC<React.PropsWithChildren<unknown>> = ()
               </span>
             </div>
           </div>
-          <div className={styles.creator}>
+          <div className={styles.creator} style={{display: "none"}}>
             <Avatar
               size={AvatarSize.Size80}
               id={templateDirectory.uuid || 'VIKA'}

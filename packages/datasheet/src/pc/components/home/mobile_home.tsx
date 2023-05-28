@@ -79,7 +79,7 @@ export const MobileHome: React.FC<React.PropsWithChildren<unknown>> = () => {
   return (
     <div className={styles.mobileHome}>
       <div className={styles.header}>
-        <img src={integrateCdnHost(getEnvVariables().LOGIN_LOGO!)} alt="logo" />
+        <img src={integrateCdnHost(getEnvVariables().LOGIN_LOGO!)} alt="logo" style={{display: "none"}} />
       </div>
       { inviteLinkInfo || inviteEmailInfo ? 
         <div className={styles.invite}>

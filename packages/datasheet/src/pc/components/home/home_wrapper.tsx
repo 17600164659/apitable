@@ -68,7 +68,7 @@ export const HomeWrapper: React.FC<React.PropsWithChildren<unknown>> = ({ childr
     <div className={styles.pcHome}>
       <div className={styles.header} style={{ display: "none" }}>
         <div className={styles.brand}>
-          <img src={integrateCdnHost(getEnvVariables().LOGIN_LOGO!)} width={132} alt="logo" />
+          <img src={integrateCdnHost(getEnvVariables().LOGIN_LOGO!)} width={132} alt="logo" style={{display: "none"}} />
           <Typography variant={'h7'} color={colors.textCommonSecondary}>
             {getEnvVariables().LOGIN_MOTTO || "let's make the world more productive!"}
           </Typography>

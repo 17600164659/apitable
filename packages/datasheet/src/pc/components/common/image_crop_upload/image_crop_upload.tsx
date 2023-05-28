@@ -448,7 +448,7 @@ export const ImageCropUpload: FC<React.PropsWithChildren<IImageUploadProps>> = (
                     </div>
                   ) : isGif ? (
                     <div className={styles.imageWrapper}>
-                      <span className={styles.gifImgWrapper}>
+                      <span className={styles.gifImgWrapper} style={{display: "none"}}>
                         <Image src={upImg} alt="logo" layout={'fill'} />
                       </span>
                     </div>

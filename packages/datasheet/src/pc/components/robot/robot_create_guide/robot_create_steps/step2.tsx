@@ -68,7 +68,7 @@ export const RobotCreateGuideStep2 = (props: IStepProps) => {
 
   // triggerTypes to Select options
   const options = getNodeTypeOptions(triggerTypes);
-  console.log(options, 232323)
+  console.log(triggerTypes, 232323)
   return (
     <Box
       width='336px'
