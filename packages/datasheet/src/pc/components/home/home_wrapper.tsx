@@ -43,7 +43,7 @@ export const HomeWrapper: React.FC<React.PropsWithChildren<unknown>> = ({ childr
 
   let socialIconsContent;
   const disableLoginSocialIcons = getEnvVariables().LOGIN_SOCIAL_ICONS_DISABLE;
-  if ((disableLoginSocialIcons && disableLoginSocialIcons == 'true') || true) {
+  if (disableLoginSocialIcons && disableLoginSocialIcons == 'true') {
     socialIconsContent = '';
   } else {
     socialIconsContent = (
@@ -69,15 +69,15 @@ export const HomeWrapper: React.FC<React.PropsWithChildren<unknown>> = ({ childr
       <div className={styles.header}>
         <div className={styles.brand}>
           <img src={integrateCdnHost(getEnvVariables().LOGIN_LOGO!)} width={132} alt="logo" />
-          {false && <Typography variant={'h7'} color={colors.textCommonSecondary}>
+          <Typography variant={'h7'} color={colors.textCommonSecondary}>
             {getEnvVariables().LOGIN_MOTTO || "let's make the world more productive!"}
-          </Typography>}
+          </Typography>
         </div>
         {socialIconsContent}
       </div>
       <div className={styles.main}>{children}</div>
       <div className={styles.footer}>
-        {false && <NavBar />}
+        <NavBar />
       </div>
     </div>
   );
