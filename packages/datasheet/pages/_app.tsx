@@ -202,21 +202,27 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
   }, [loading]);
 
   useEffect(() => {
+    console.log(1, 23232323)
     const getUser = async() => {
+      console.log(2, 23232323)
       const pathUrl = window.location.pathname;
+      console.log(3, pathUrl, 23232323)
       const query = new URLSearchParams(window.location.search);
+      console.log(4, 23232323)
       const spaceId = query.get('spaceId') || getRegResult(pathUrl, spaceIdReg) || '';
+      console.log(5, 23232323)
       const res = await axios.get('/client/info', {
         params: {
           spaceId
         }
       });
+      console.log(6, res, 23232323)
       let userInfo = JSON.parse(res.data.userInfo);
       setUserData(userInfo);
-
+      console.log(7, 23232323)
       const { nodeId } = getPageParams(pathUrl || '');
       let userInfoError: IUserInfoError | undefined;
-
+      console.log(8, 23232323)
       /**
        * If there is no nodeId or spaceId in the pathUrl, the userInfo returned by user/me and client/info is actually the same,
        * so there is no need to repeat the request.
@@ -234,9 +240,10 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
         ) &&
         (nodeId || spaceId)
       ) {
+        console.log(9, 23232323)
         const res = await Api.getUserMe({ nodeId, spaceId }, false);
         const { data, success, message, code } = res.data;
-
+        console.log(10, 23232323)
         if (success) {
           userInfo = data;
         } else {
@@ -246,7 +253,7 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
           };
         }
       }
-
+      console.log(11, 23232323)
       setUserLoading(false);
 
       if (!userInfo) return;
@@ -301,9 +308,7 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
       // Initialize the user system
       initPlayer();
       console.log('Current version number: ' + getReleaseVersion());
-    }).catch(e => {
-      console.log(e, 90909090)
-    })
+    });
   }, []);
 
   useEffect(() => {
