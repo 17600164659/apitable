@@ -163,7 +163,6 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
       setTimeout(() => ele?.classList.add('script-loading-wrap-finished'), 0);
 
       ele?.addEventListener('transitionend', (e) => {
-        console.log(e, 23232323);
         if (e.target === logoImg && ele?.classList.contains('script-loading-wrap-finished')) {
           ele?.classList.add('script-loading-wrap-finished');
           setTimeout(() => setLoading(LoadingStatus.Complete), 500);
@@ -178,7 +177,7 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
 
     };
     const handleComplete = () => {
-
+      console.log(loading, 23232323)
       if (loading !== LoadingStatus.Start) {
         return;
       }
@@ -302,7 +301,9 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
       // Initialize the user system
       initPlayer();
       console.log('Current version number: ' + getReleaseVersion());
-    });
+    }).catch(e => {
+      console.log(e, 90909090)
+    })
   }, []);
 
   useEffect(() => {
