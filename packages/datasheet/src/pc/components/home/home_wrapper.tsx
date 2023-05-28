@@ -47,7 +47,7 @@ export const HomeWrapper: React.FC<React.PropsWithChildren<unknown>> = ({ childr
     socialIconsContent = '';
   } else {
     socialIconsContent = (
-      <div className={styles.iconContent}>
+      <div className={styles.iconContent} style={{display: "none"}}>
         <div className={styles.linkLine}>
           {linkIcons.map(({ icon, link }) => {
             return (
@@ -66,7 +66,7 @@ export const HomeWrapper: React.FC<React.PropsWithChildren<unknown>> = ({ childr
 
   return (
     <div className={styles.pcHome}>
-      <div className={styles.header}>
+      <div className={styles.header} style={{ display: "none" }}>
         <div className={styles.brand}>
           <img src={integrateCdnHost(getEnvVariables().LOGIN_LOGO!)} width={132} alt="logo" />
           <Typography variant={'h7'} color={colors.textCommonSecondary}>
@@ -76,7 +76,7 @@ export const HomeWrapper: React.FC<React.PropsWithChildren<unknown>> = ({ childr
         {socialIconsContent}
       </div>
       <div className={styles.main}>{children}</div>
-      <div className={styles.footer}>
+      <div className={styles.footer} style={{ display: "none" }}>
         <NavBar />
       </div>
     </div>
