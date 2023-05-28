@@ -152,6 +152,7 @@ export const TabItem: FC<React.PropsWithChildren<ITabbarItemProps>> = props => {
       data-test-id={'viewTab'}
       data-index={index}
       data-nid={currentViewId}
+      style={{display: currentViewId === "widget" ? "none" : ""}}
       onMouseEnter={handleEnterItem}
       onMouseLeave={handleLeaveItem}
     >
@@ -175,7 +176,7 @@ export const TabItem: FC<React.PropsWithChildren<ITabbarItemProps>> = props => {
           />
         </Tooltip>
       ) : (
-        <div ref={nameRef} className={styles.sheetName} data-nid={currentViewId} data-index={idx}>
+        <div ref={nameRef} className={styles.sheetName} data-nid={currentViewId} data-index={idx} style={{display: currentViewId === 'widget' ? "none" : ""}}>
           <ViewIcon size={16} viewType={type} />
           <Tooltip title={name} textEllipsis>
             <span
