@@ -375,8 +375,6 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
   }, [curTimezone]);
 
   console.log(userLoading, loading, 23232323)
-  alert(userLoading)
-  alert(loading)
 
   return <>
     <Head>
