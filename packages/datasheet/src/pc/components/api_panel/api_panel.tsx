@@ -76,8 +76,8 @@ export const ApiPanel: React.FC<React.PropsWithChildren<unknown>> = () => {
       <h1 className={styles.panelTitle}>
         <ApiOutlined size={24} color={colors.primaryColor} />
         {t(Strings.api_panel_title)}
-        {/* {
-          getEnvVariables().API_PANEL_HELP_URL && <Button
+        {
+          getEnvVariables().API_PANEL_HELP_URL && false && <Button
             onClick={() => {
               window.open(getEnvVariables().API_PANEL_HELP_URL, '_blank', 'noopener=yes,noreferrer=yes');
             }}
@@ -88,7 +88,7 @@ export const ApiPanel: React.FC<React.PropsWithChildren<unknown>> = () => {
           >
             {t(Strings.document_detail)}
           </Button>
-        } */}
+        }
         <Divider orientation='vertical' style={{ margin: 0, background: colors.fc5, opacity: 0.3 }} />
         {
           APIFOX_HOME_URL && <Button
