@@ -374,6 +374,10 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
     };
   }, [curTimezone]);
 
+  console.log(userLoading, loading, 23232323)
+  alert(userLoading)
+  alert(loading)
+
   return <>
     <Head>
       <title>
@@ -489,9 +493,6 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
     }
     {<Sentry.ErrorBoundary fallback={ErrorPage} beforeCapture={beforeCapture}>
       <div className={'__next_main'}>
-        {
-          console.log(userLoading, loading, 23232323)
-        }
         {!userLoading && <div style={{ opacity: loading !== LoadingStatus.Complete ? 0 : 1 }} onScroll={onScroll}>
           <PostHogProvider client={posthog}>
             <Provider store={store}>
