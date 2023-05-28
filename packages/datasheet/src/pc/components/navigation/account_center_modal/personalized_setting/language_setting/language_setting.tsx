@@ -71,9 +71,9 @@ export const LanguageSetting: FC<React.PropsWithChildren<unknown>> = () => {
   return (
     <div className={styles.languageSetting}>
       <Typography variant="h7" className={styles.title}>{t(Strings.language_setting)}</Typography>
-      <div className={styles.tip}>
+      <div className={styles.tip} style={{display: "none"}}>
         {t(Strings.give_feedback_to_translation)}
-        <a 
+        <a
           className={styles.learnMore} 
           href={getEnvVariables().TRANSLATION_FEEDBACK_HELP_URL}
           rel="noopener noreferrer"
