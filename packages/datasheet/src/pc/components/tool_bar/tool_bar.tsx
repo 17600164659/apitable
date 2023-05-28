@@ -401,6 +401,8 @@ const ToolbarBase = () => {
     show: embedSetting.widgetBtn,
   }
 
+  console.log(a)
+
   // The configuration array traversal for rendering, you need to manually specify a non-repeating key for the component,
   // usually the component name can be, repeatedly rendered components are followed by a number.
   const featureToolItems = [
