@@ -163,6 +163,7 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
       setTimeout(() => ele?.classList.add('script-loading-wrap-finished'), 0);
 
       ele?.addEventListener('transitionend', (e) => {
+        console.log(e, 23232323);
         if (e.target === logoImg && ele?.classList.contains('script-loading-wrap-finished')) {
           ele?.classList.add('script-loading-wrap-finished');
           setTimeout(() => setLoading(LoadingStatus.Complete), 500);
@@ -515,7 +516,6 @@ function MyAppMain({ Component, pageProps, envVars }: AppProps & { envVars: stri
             {
               ((loading !== LoadingStatus.Complete) || userLoading) && <div className='main-img-wrap' style={{ height: 'auto' }}>
                 <img src="https://assets.metaio.cc/hubs/assets/newloading-93a856a0a1204d39c7623e3ca800a806.gif" className='script-loading-logo-img' alt='logo' />
-                是改了这里吗？
               </div>
             }
           </div>
