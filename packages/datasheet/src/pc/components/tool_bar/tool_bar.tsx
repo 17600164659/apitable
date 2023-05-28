@@ -429,22 +429,22 @@ const ToolbarBase = () => {
       key: 'api',
       show: !isGanttView && !shareId && !templateId && !mirrorId && embedSetting.apiBtn,
     },
-    {
-      component: (
-        <ToolItem
-          key='widget'
-          icon={<WidgetOutlined size={16} className={styles.toolIcon} />}
-          text={widgetCount > 0 ? t(Strings.widget_num, { count: widgetCount }) : t(Strings.widget_tip)}
-          // onClick={() => ShortcutActionManager.trigger(ShortcutActionName.ToggleWidgetPanel)}
-          onClick={() => handleToggleRightBar(ShortcutActionName.ToggleWidgetPanel)}
-          className={classNames({ [styles.toolbarItem]: true, [styles.apiActive]: isWidgetPanel })}
-          id={DATASHEET_ID.WIDGET_BTN}
-          showLabel={showIconBarLabel}
-        />
-      ),
-      key: 'widget',
-      show: embedSetting.widgetBtn,
-    },
+    // {
+    //   component: (
+    //     <ToolItem
+    //       key='widget'
+    //       icon={<WidgetOutlined size={16} className={styles.toolIcon} />}
+    //       text={widgetCount > 0 ? t(Strings.widget_num, { count: widgetCount }) : t(Strings.widget_tip)}
+    //       // onClick={() => ShortcutActionManager.trigger(ShortcutActionName.ToggleWidgetPanel)}
+    //       onClick={() => handleToggleRightBar(ShortcutActionName.ToggleWidgetPanel)}
+    //       className={classNames({ [styles.toolbarItem]: true, [styles.apiActive]: isWidgetPanel })}
+    //       id={DATASHEET_ID.WIDGET_BTN}
+    //       showLabel={showIconBarLabel}
+    //     />
+    //   ),
+    //   key: 'widget',
+    //   show: embedSetting.widgetBtn,
+    // },
     {
       component: (
         <ToolItem
