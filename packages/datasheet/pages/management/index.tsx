@@ -22,7 +22,7 @@ import React, { useEffect } from 'react';
 const App = () => {
 
   useEffect(() => {
-    Router.replace('management/overview');
+    Router.replace('management/managemember');
   }, []);
 
   return <></>;

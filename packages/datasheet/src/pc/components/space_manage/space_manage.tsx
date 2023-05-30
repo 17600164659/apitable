@@ -34,7 +34,7 @@ const SpaceManage: React.FC<React.PropsWithChildren> = ({ children }) => {
 
   useEffect(()=>{
     if(router.pathname ==='/management'){
-      router.replace('/management/overview');
+      router.replace('/management/managemember');
     }
   },[router]);
 
