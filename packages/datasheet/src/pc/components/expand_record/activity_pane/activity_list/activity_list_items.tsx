@@ -16,7 +16,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import { LinkButton, Typography, useThemeColors, ThemeName } from '@apitable/components';
+// import { LinkButton, Typography, useThemeColors, ThemeName } from '@apitable/components';
+import { Typography, useThemeColors, ThemeName } from '@apitable/components';
 import {
   Api, CollaCommandName, ConfigConstant, DatasheetApi, IActivityListParams, ICommentMsg, IJOTAction, integrateCdnHost, IRemoteChangeset, MemberType,
   OPEventNameEnums, OtherTypeUnitId, ResourceType, Selectors, Settings, StoreActions, Strings, t, WithOptional,
