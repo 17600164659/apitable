@@ -176,7 +176,8 @@ export const TabItem: FC<React.PropsWithChildren<ITabbarItemProps>> = props => {
           />
         </Tooltip>
       ) : (
-        <div ref={nameRef} className={styles.sheetName} data-nid={currentViewId} data-index={idx} style={{display: currentViewId === 'widget' ? "none" : ""}}>
+        // <div ref={nameRef} className={styles.sheetName} data-nid={currentViewId} data-index={idx} style={{display: currentViewId === 'widget' ? "none" : ""}}>
+        <div ref={nameRef} className={styles.sheetName} data-nid={currentViewId} data-index={idx}>
           <ViewIcon size={16} viewType={type} />
           <Tooltip title={name} textEllipsis>
             <span

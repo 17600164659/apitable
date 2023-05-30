@@ -464,7 +464,7 @@ const CollapseBase: React.ForwardRefRenderFunction<ICollapseFunc, ICollapseProps
                     {(providedChild) => {
                       return (
                         <div
-                          style={{ display: key === "widget" ? "none" : "" }}
+                          // style={{ display: key === "widget" ? "none" : "" }}
                           data-nid={key}
                           ref={providedChild.innerRef}
                           {...providedChild.draggableProps}
