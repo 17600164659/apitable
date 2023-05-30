@@ -1,6 +1,6 @@
 /**
- * APITable <https://github.com/apitable/apitable>
- * Copyright (C) 2022 APITable Ltd. <https://apitable.com>
+ * 未陌数据云 <https://github.com/apitable/apitable>
+ * Copyright (C) 2022 未陌数据云 Ltd. <https://apitable.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
