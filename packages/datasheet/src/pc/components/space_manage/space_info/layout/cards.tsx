@@ -64,7 +64,7 @@ export const useCards = (props: ILayoutProps) => {
 
   // Opened by a third-party space station or through a third-party browser
   const isSocial = isSocialEnabled || inSocialApp?.() || isSocialFeiShu?.();
-
+  console.log(isSocial)
   return useMemo(() => {
     return {
       AdCard: (props: ICardProps) => {
