@@ -169,7 +169,7 @@ const SentToDashboard: React.FC<React.PropsWithChildren<ISentToDashboardProps>> 
                   <div className={styles.emptyImg}>
                     <Image src={templateEmptyPng} alt='' width={224} height={168} />
                   </div>
-                  <p>
+                  {/* <p>
                     <TComponent
                       tkey={t(Strings.empty_dashboard_list)}
                       params={{
@@ -178,7 +178,7 @@ const SentToDashboard: React.FC<React.PropsWithChildren<ISentToDashboardProps>> 
                         </a>,
                       }}
                     />
-                  </p>
+                  </p> */}
                 </div>
           }
         </div>

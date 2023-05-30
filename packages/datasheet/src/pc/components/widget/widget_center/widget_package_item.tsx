@@ -177,7 +177,7 @@ const WidgetPackageItemBase = (props: IWidgetPackageItemProps) => {
         <p>
           {description}
         </p>
-        <div className={styles.developerWrap}>
+        {/* <div className={styles.developerWrap}>
           <span>{t(Strings.widget_center_publisher)}</span>
           <div className={styles.avatarWrap}>
             <Avatar
@@ -189,7 +189,7 @@ const WidgetPackageItemBase = (props: IWidgetPackageItemProps) => {
             />
           </div>
           <span>{authorName}</span>
-        </div>
+        </div> */}
         {isReview && <div>{version}</div>}
         <InstallButton />
       </div>
@@ -217,7 +217,7 @@ const WidgetPackageItemBase = (props: IWidgetPackageItemProps) => {
       <p className={styles.spaceWidgetDesc}>
         {description}
       </p>
-      <div className={styles.developerWrap}>
+      {/* <div className={styles.developerWrap}>
         <span>{t(Strings.widget_center_publisher)}</span>
         <UserCardTrigger
           popupAlign={{
@@ -240,7 +240,7 @@ const WidgetPackageItemBase = (props: IWidgetPackageItemProps) => {
             <span>{authorName}</span>
           </div>
         </UserCardTrigger>
-      </div>
+      </div> */}
       <InstallButton />
     </div>
   );
