@@ -40,7 +40,8 @@ type IWidgetPackageItemProps = IWidgetPackage & IWidgetPackageItemBase;
 
 const WidgetPackageItemBase = (props: IWidgetPackageItemProps) => {
   const {
-    cover, name, releaseType, description, widgetPackageId, installPosition, onModalClose, authorIcon, authorName, icon, showMenu, status,
+    // cover, name, releaseType, description, widgetPackageId, installPosition, onModalClose, authorIcon, authorName, icon, showMenu, status,
+    cover, name, releaseType, description, widgetPackageId, installPosition, onModalClose, authorName, icon, showMenu, status,
     ownerUuid, ownerMemberId, extras, version, installEnv,
   } = props;
   const colors = useThemeColors();
