@@ -404,9 +404,9 @@ export const ActivityListItems: FC<React.PropsWithChildren<IActivityListProps & 
         <div>{t(Strings.no_comment_tip)}</div>
         <div>
           {selectType !== ActivitySelectType.Comment && t(Strings.history_view_tip, { day: maxRemainRecordActivityDays })}
-          <LinkButton href={t(Strings.record_history_help_url)} color={colors.thirdLevelText} className={styles.more} target='_blank'>
+          {/* <LinkButton href={t(Strings.record_history_help_url)} color={colors.thirdLevelText} className={styles.more} target='_blank'>
             {t(Strings.know_more)}
-          </LinkButton>
+          </LinkButton> */}
         </div>
         {selectType !== ActivitySelectType.Comment && maxRemainRecordActivityDays !== MAX_LIMIT_DAY && (
           <div onClick={loadOverLimitData} className={styles.loadMaxList} style={{ marginTop: 8 }}>
@@ -467,9 +467,9 @@ export const ActivityListItems: FC<React.PropsWithChildren<IActivityListProps & 
             {maxRemainRecordActivityDays !== MAX_LIMIT_DAY ? (
               <div>
                 「{product}」{t(Strings.history_view_tip, { day: maxRemainRecordActivityDays })}
-                <LinkButton href={t(Strings.record_history_help_url)} color={colors.thirdLevelText} className={styles.more} target='_blank'>
+                {/* <LinkButton href={t(Strings.record_history_help_url)} color={colors.thirdLevelText} className={styles.more} target='_blank'>
                   {t(Strings.know_more)}
-                </LinkButton>
+                </LinkButton> */}
               </div>
             ) : (
               <div>{t(Strings.record_activity_experience_tips, { day: MAX_LIMIT_DAY })}</div>
