@@ -22,7 +22,7 @@ import { DashboardOutlined } from '@apitable/icons';
 import classNames from 'classnames';
 import Image from 'next/image';
 import { Emoji, Message, Modal } from 'pc/components/common';
-import { TComponent } from 'pc/components/common/t_component';
+// import { TComponent } from 'pc/components/common/t_component';
 import { Router } from 'pc/components/route_manager/router';
 import { useAppDispatch } from 'pc/hooks/use_app_dispatch';
 import { resourceService } from 'pc/resource_service';
