@@ -127,7 +127,7 @@ const AlbumDetail = () => {
       <div className={styles.albumContent}>
         <div className={styles.albumContentLeft}>
           <div className={styles.albumAuthor}>
-            <header>
+            {/* <header>
               <div className={styles.albumAuthorImg}>
                 <Image src={album.authorLogo} alt='author logo' layout='fill' objectFit='cover' />
               </div>
@@ -137,7 +137,7 @@ const AlbumDetail = () => {
                   {album.authorName}
                 </h4>
               </div>
-            </header>
+            </header> */}
             <div className={styles.authorDesc}>
               <span>
                 <DescriptionOutlined currentColor />
