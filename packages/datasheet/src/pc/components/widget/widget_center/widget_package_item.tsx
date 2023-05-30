@@ -21,7 +21,8 @@ import { ConfigConstant, IWidgetPackage, ResourceType, Strings, t, WidgetInstall
 import { AddOutlined, LinkOutlined, MoreOutlined } from '@apitable/icons';
 import classNames from 'classnames';
 import Image from 'next/image';
-import { Avatar, AvatarSize, Message, UserCardTrigger } from 'pc/components/common';
+// import { Avatar, AvatarSize, Message, UserCardTrigger } from 'pc/components/common';
+import { Message } from 'pc/components/common';
 import { Modal } from 'pc/components/common/modal/modal/modal';
 import { InstallPosition } from 'pc/components/widget/widget_center/enum';
 import { installToDashboard, installToPanel, installWidget } from 'pc/components/widget/widget_center/install_utils';
@@ -154,7 +155,7 @@ const WidgetPackageItemBase = (props: IWidgetPackageItemProps) => {
         />
         <div className={styles.authorIconWrap}>
           <div className={styles.arcBoxLeft} />
-          <div className={styles.avatarWrap}>
+          {/* <div className={styles.avatarWrap}>
             <Avatar
               className={styles.avatar}
               style={{ border: 0 }}
@@ -163,7 +164,7 @@ const WidgetPackageItemBase = (props: IWidgetPackageItemProps) => {
               title={authorName}
               size={AvatarSize.Size24}
             />
-          </div>
+          </div> */}
           <div className={styles.arcBoxRight} />
         </div>
         {extras?.website && <Tooltip content={t(Strings.widget_homepage_tooltip)} placement='top-center'>
