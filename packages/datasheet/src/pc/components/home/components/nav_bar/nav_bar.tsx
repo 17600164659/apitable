@@ -23,7 +23,7 @@ export const NavBar: React.FC<React.PropsWithChildren<{gap?: number}>> = (props)
   const { gap = 32 } = props;
   const linkList = [
     {
-      href: 'https://help.apitable.com',
+      href: 'https://wemoai.com',
       target: '_blank',
       text: 'Help Center'
     },
