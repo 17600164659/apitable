@@ -202,6 +202,7 @@ export const Navigation: FC<React.PropsWithChildren<unknown>> = () => {
     dispatch(StoreActions.getNewMsgFromWsAndLook(false));
     destroyLottie();
   }, [destroyLottie, dispatch, isMobile, toggleNotice]);
+  console.log('/management' + search, 90909090)
   const navList = Player.applyFilters(Events.get_nav_list, [
     {
       routeAddress: '/workbench' + search,

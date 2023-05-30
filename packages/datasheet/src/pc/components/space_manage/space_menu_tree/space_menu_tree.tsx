@@ -61,13 +61,13 @@ interface ISpaceNavInfo {
 }
 
 export const getSpaceNavList = (isMainAdmin: boolean, permissions: string[], marketplaceDisable?: boolean, isSelfVika?: boolean) => compact([
-  {
-    title: t(Strings.space_info),
-    key: SPACE_INFO_KEY,
-    icon: <DashboardOutlined />,
-    valid: true,
-    routeAddress: '/overview',
-  },
+  // {
+  //   title: t(Strings.space_info),
+  //   key: SPACE_INFO_KEY,
+  //   icon: <DashboardOutlined />,
+  //   valid: true,
+  //   routeAddress: '/overview',
+  // },
   Log && {
     title: t(Strings.space_log_title),
     key: 'log',
