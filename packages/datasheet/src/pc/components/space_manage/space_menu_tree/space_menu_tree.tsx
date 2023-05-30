@@ -20,7 +20,8 @@ import { Typography } from '@apitable/components';
 import { ConfigConstant, IReduxState, Navigation as NavigationConst, Strings, t } from '@apitable/core';
 import { 
   LogOutlined, ShieldCheckOutlined, RocketOutlined, TestOutlined, ManageApplicationOutlined, 
-  TriangleRightFilled, DashboardOutlined, DepartmentOutlined, WorkbenchOutlined 
+  // TriangleRightFilled, DashboardOutlined, DepartmentOutlined, WorkbenchOutlined 
+  TriangleRightFilled, DepartmentOutlined, WorkbenchOutlined 
 } from '@apitable/icons';
 import { Tree } from 'antd';
 // @ts-ignore
